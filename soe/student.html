@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School of Engineering Student Demo | PBL Workspace</title>
+  <link rel="stylesheet" href="login-source/styles.css">
+  <link rel="stylesheet" href="soe-login-integration.css">
+</head>
+
+  <main class="login-page">
+    <header class="topbar">
+      <img class="mit-logo" src="login-source/assets/mitlogo2-GkkOp7lG.png" alt="MIT-ADT University">
+      <div class="top-actions">
+        <a class="faculty-btn" id="facultyBtn" href="faculty.html" style="text-decoration:none">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7h10a2 2 0 0 1 2 2v10H5V9a2 2 0 0 1 2-2Z"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M8 13h8"/></svg>
+          Faculty Login
+        </a>
+        <a class="home-btn" id="homeBtn" href="../soe.html" aria-label="Home">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7"/><path d="M5 9v11h14V9M9 20v-6h6v6"/></svg>
+        </a>
+      </div>
+    </header>
+
+    <section class="left-panel">
+      <div class="login-content">
+        <div class="soc-heading">
+          <div class="soc-icon-wrap">
+            <img class="soc-icon" src="login-source/assets/soe-C6Py4-tP.png" alt="School of Engineering Icon">
+          </div>
+          <div class="soc-title">
+            <div class="soc-small">SCHOOL OF</div>
+            <div class="soc-large">ENGINEERING</div>
+          </div>
+        </div>
+        <div class="soc-accent"></div>
+
+        <a class="home-link" id="backHome" href="../soe.html" style="text-decoration:none">
+          <span class="arrow">←</span><span>Home</span>
+        </a>
+
+        <form id="loginForm" autocomplete="off">
+          <label for="enrollment">Enrollment Number/Phone</label>
+          <div class="input-wrap">
+            <svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5.5 20c.5-3.3 2.7-5 6.5-5s6 1.7 6.5 5"/></svg>
+            <input id="enrollment" name="enrollment" type="text" placeholder="Enter your enrollment number" autocomplete="off" required>
+          </div>
+
+          <label for="password">Password</label>
+          <div class="input-wrap">
+            <svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+            <input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="off" required>
+            <button class="eye-btn" id="togglePassword" type="button" aria-label="Show password">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.2-5 9.5-5 9.5 5 9.5 5-3.2 5-9.5 5-9.5-5-9.5-5Z"/><circle cx="12" cy="12" r="2.2"/></svg>
+            </button>
+          </div>
+
+          <button class="forgot" type="button" id="forgotBtn">Forgot Password?</button>
+          <button class="signin" type="submit">Sign In</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="hero-panel" aria-label="MIT-ADT University campus image">
+      <img src="login-source/assets/studentlogin-CduVQ0m8.png" alt="MIT-ADT University Campus">
+    </section>
+  </main>
+
+  <script src="soe-login-integration.js"></script>
+</body>
+</html>
+
+
+

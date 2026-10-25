@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School of Computing Student Demo | PBL Workspace</title>
+  <link rel="stylesheet" href="student-login.css">
+</head>
+
+  <main class="login-page">
+    <header class="topbar">
+      <img class="mit-logo" src="../assets/student-mitlogo2-GkkOp7lG.png" alt="MIT-ADT University">
+      <div class="top-actions">
+        <button class="faculty-btn" type="button" id="facultyBtn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7h10a2 2 0 0 1 2 2v10H5V9a2 2 0 0 1 2-2Z"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M8 13h8"/></svg>
+          Faculty Login
+        </button>
+        <button class="home-btn" type="button" id="homeBtn" aria-label="Home">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7"/><path d="M5 9v11h14V9M9 20v-6h6v6"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <section class="left-panel">
+      <div class="login-content">
+        <div class="soc-heading">
+          <div class="soc-icon-wrap">
+            <img class="soc-icon" src="../assets/student-soc-DpQfax_S.png" alt="">
+          </div>
+          <div class="soc-title">
+            <div class="soc-small">SCHOOL OF</div>
+            <div class="soc-large">COMPUTING</div>
+          </div>
+        </div>
+        <div class="soc-accent"></div>
+
+        <button class="home-link" type="button" id="backHome">
+          <span class="arrow">←</span><span>Home</span>
+        </button>
+
+        <form id="loginForm" autocomplete="off">
+          <label for="enrollment">Enrollment Number</label>
+          <div class="input-wrap">
+            <svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5.5 20c.5-3.3 2.7-5 6.5-5s6 1.7 6.5 5"/></svg>
+            <input id="enrollment" name="demo_enrollment" type="text" placeholder="Enter your enrollment number" autocomplete="off">
+          </div>
+
+          <label for="password">Password</label>
+          <div class="input-wrap">
+            <svg class="input-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+            <input id="password" name="demo_password" autocomplete="new-password" type="password" placeholder="Enter your password">
+            <button class="eye-btn" id="togglePassword" type="button" aria-label="Show password">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12s3.2-5 9.5-5 9.5 5 9.5 5-3.2 5-9.5 5-9.5-5-9.5-5Z"/><circle cx="12" cy="12" r="2.2"/></svg>
+            </button>
+          </div>
+
+          <button class="forgot" type="button" id="forgotBtn">Forgot Password?</button>
+          <button class="signin" type="submit">Sign In</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="hero-panel" aria-label="MIT-ADT University campus image">
+      <img src="../assets/student-studentlogin-CduVQ0m8.png" alt="MIT-ADT University Campus">
+    </section>
+  </main>
+
+  <script src="student-login.js"></script>
+</body>
+</html>
